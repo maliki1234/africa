@@ -53,7 +53,7 @@ export default function Contact() {
         name="message"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>email</FormLabel>
+            <FormLabel>message</FormLabel>
             <FormControl>
               <Input placeholder="shadcn" {...field} />
             </FormControl>
