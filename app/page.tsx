@@ -1,5 +1,7 @@
 // import Home from '@/components/Home/Home'
 import HomePage from '@/components/Home/HomePage'
+import About from '@/components/about/About'
+import Contact from '@/components/contact/Contact'
 import Gallery from '@/components/gallery/Gallery'
 import Header from '@/components/header/Header'
 import Service from '@/components/service/Service'
@@ -13,8 +15,11 @@ export default function page() {
       {/* <Home/>
        */}
 <HomePage/>
+<About/>
 <Service/>
 <Gallery/>
+<Contact/>
+
 
     </div>
   )
