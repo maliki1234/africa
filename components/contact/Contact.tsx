@@ -35,6 +35,7 @@ export default function Contact() {
     // <div>Contact</div>
     <Form {...form}>
     <form  onSubmit={form.handleSubmit(onSubmit)} className="  w-full px-4 space-y-8 w-11/12">
+        <h3 className='text-center py-5 text-3xl'> Contact Us </h3>
       <FormField
         control={form.control}
         name="email"
@@ -61,7 +62,7 @@ export default function Contact() {
           </FormItem>
         )}
       />
-      <Button type="submit">Submit</Button>
+      <Button type="submit">Send</Button>
     </form>
   </Form>
   )
