@@ -2,14 +2,13 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/utils/cn";
+import { ModeToggle } from "./ModeToggle";
 
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
-      <p className="text-black dark:text-white">
-        The Navbar will show on top of the page
-      </p>
+      <Navbar className="top-0" />
+     
     </div>
   );
 }
@@ -63,8 +62,12 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/individual">Individual</HoveredLink>
             <HoveredLink href="/team">Team</HoveredLink>
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+          
           </div>
         </MenuItem>
+        {/* <MenuItem setActive={setActive} active={active} item="mode">
+          <ModeToggle/>
+          </MenuItem> */}
       </Menu>
     </div>
   );

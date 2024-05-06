@@ -6,6 +6,7 @@ import Gallery from '@/components/gallery/Gallery'
 import Header from '@/components/header/Header'
 import Service from '@/components/service/Service'
 import SideBar from '@/components/sidebar/SideBar'
+import { Team } from '@/components/team/Team'
 import React from 'react'
 
 export default function page() {
@@ -19,6 +20,7 @@ export default function page() {
 <Service/>
 <Gallery/>
 <Contact/>
+<Team/>
 
 
     </div>

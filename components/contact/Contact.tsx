@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
+import { Textarea } from '../ui/textarea'
 
 const formSchema = z.object({
     email: z.string().min(2).max(50),
@@ -34,35 +35,46 @@ export default function Contact() {
   return (
     // <div>Contact</div>
     <Form {...form}>
-    <form  onSubmit={form.handleSubmit(onSubmit)} className="  w-full px-4 space-y-8 w-11/12">
+    <form  onSubmit={form.handleSubmit(onSubmit)} className="  w-full flex flex-col justify-ceneter items-center space-y-8 ">
         <h3 className='text-center py-5 text-3xl'> Contact Us </h3>
-      <FormField
-        control={form.control}
-        name="email"
-        render={({ field }) => (
-          <FormItem>
-            <FormLabel>email</FormLabel>
-            <FormControl>
-              <Input placeholder="shadcn" {...field} />
-            </FormControl>
-            <FormMessage />
-          </FormItem>
-        )}
-      /> 
-      <FormField
+     <div className=" w-9/12">
+     <FormField 
+      
+      control={form.control}
+      name="email"
+      render={({ field }) => (
+        <FormItem>
+          <FormLabel>email</FormLabel>
+          <FormControl>
+            <Input placeholder="enter your email" {...field} />
+          </FormControl>
+          <FormMessage />
+        </FormItem>
+      )}
+    /> 
+     </div>
+     <div className="w-9/12">
+     <FormField
         control={form.control}
         name="message"
         render={({ field }) => (
           <FormItem>
             <FormLabel>message</FormLabel>
             <FormControl>
-              <Input placeholder="shadcn" {...field} />
+              {/* <Input placeholder="shadcn" {...field} />
+               */}
+               <Textarea placeholder='tell us anything' {...field}/>
             </FormControl>
             <FormMessage />
           </FormItem>
         )}
       />
-      <Button type="submit">Send</Button>
+     </div>
+     <div className="w-9/12 flex items-left">
+
+       
+     <Button type="submit">Send</Button>
+     </div>
     </form>
   </Form>
   )
