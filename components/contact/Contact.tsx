@@ -36,7 +36,7 @@ export default function Contact() {
     // <div>Contact</div>
     <Form {...form}>
     <form  onSubmit={form.handleSubmit(onSubmit)} className="  w-full flex flex-col justify-ceneter items-center space-y-8 ">
-        <h3 className='text-center py-5 text-3xl'> Contact Us </h3>
+        <h3 className='text-center py-5 text-3xl font-bold text-primary'> Contact Us </h3>
      <div className=" w-9/12">
      <FormField 
       

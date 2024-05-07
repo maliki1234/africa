@@ -7,9 +7,7 @@ const {
 
 
 const config = {
-  images: {
-    domains: ['images.unsplash.com']
-},
+  
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',

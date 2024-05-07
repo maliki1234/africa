@@ -2,6 +2,7 @@
 import HomePage from '@/components/Home/HomePage'
 import About from '@/components/about/About'
 import Contact from '@/components/contact/Contact'
+import Footer from '@/components/footer/Footer'
 import Gallery from '@/components/gallery/Gallery'
 import Header from '@/components/header/Header'
 import Service from '@/components/service/Service'
@@ -21,6 +22,7 @@ export default function page() {
 <Gallery/>
 <Contact/>
 <Team/>
+<Footer/>
 
 
     </div>
